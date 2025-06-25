@@ -1,0 +1,6 @@
+tkinter(build in)
+sqlite3(build in)
+
+need to install
+Python 3.11
+pillow 11.1.0 (for images)
