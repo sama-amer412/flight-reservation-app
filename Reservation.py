@@ -5,6 +5,8 @@ from tkinter import ttk
 from tkinter import messagebox
 from Edit_reservation import edit_reservation_page
 from PIL import Image, ImageTk
+import os
+import sys
 def reservation (root):
     global tree
     screenwidth = root.winfo_screenwidth()
@@ -13,7 +15,10 @@ def reservation (root):
 
     # making the background
 
-    bg_image = Image.open("images/background.jpg")
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    image_path = os.path.join(base_path, "images", "background.jpg")
+
+    bg_image = Image.open(image_path)
     bg_image = bg_image.resize((screenwidth, screenheight))
     bg_photo = ImageTk.PhotoImage(bg_image)
     bg_label = Label(reservation_main_frame, image=bg_photo)
@@ -22,7 +27,7 @@ def reservation (root):
     bg_label.lower()
 
    #making the table
-    columns=("no.reservation","name","flight number","departure","destination","date","seat number")
+    columns=("no.reservation","name","flight number","departure","destination","date","seat number","time")
     tree=ttk.Treeview(reservation_main_frame,columns=columns,show="headings")
     for col in columns:
         tree.heading(col, text=col,anchor="center")
@@ -70,7 +75,7 @@ def reservation (root):
             reservation_main_frame.pack_forget()
 
         else:
-            messagebox.showwarning("No Selection", "Please select a reservation to delete.")
+            messagebox.showwarning("No Selection", "Please select a reservation to edit.")
 
     # Buttons
     edit_btn = Button(reservation_main_frame, text="edit reservation ", width=15, height=2, bg="#85c1e9",command=edit_selected)
