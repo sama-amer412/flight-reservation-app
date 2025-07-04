@@ -64,5 +64,5 @@ This project is for educational purposes only.
 ## 🙋‍♀ Author
 **Sama Amer**
 
-- 💼 LinkedIn: [linkedin.com/in/sama-amer](https://linkedin.com/in/www.linkedin.com/in/sama-amer-644179364)
+- 💼 LinkedIn: [linkedin.com/in/sama-amer](www.linkedin.com/in/sama-amer-644179364)
 - 💻 GitHub: [github.com/sama-amer](https://github.com/https://github.com/sama-amer412)
