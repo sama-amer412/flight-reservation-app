@@ -49,13 +49,13 @@ Flight name and time are auto-filled based on the selected route, and seats are 
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](images/home_page.jpg)
+![Home Page](images/home_page.png)
 
 ### 📑 Booking Page
-![Booking Page](images/book_page.jpg)
+![Booking Page](images/book_page.png)
 
 ### 📋 Reservation Page
-![Reservation Page](images/view_reservation_page.jpg)
+![Reservation Page](images/view_reservation_page.png)
 
 ## 🛠 Technologies Used
 
