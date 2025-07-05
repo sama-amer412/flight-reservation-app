@@ -25,6 +25,11 @@ Built using Python and Tkinter, it offers an easy-to-use graphical interface.
 - background.jpg         : Background image
 - README.md              : This file
 
+## 🧠 Project Logic Summary
+The application follows a modular design where main.py loads different screens (Home, Booking, Reservations) dynamically based on user actions. The flight schedule logic is linked to real-world patterns: users select a date, and based on the day of the week, the app fetches only the available flight routes, departure points, and destinations for that day.
+
+Flight name and time are auto-filled based on the selected route, and seats are selected from a realistic aircraft seating plan. The app uses Tkinter + Canvas for a styled interface, tkcalendar for date picking, and SQLite3 for persistent local data storage. All DB logic (insert, update, delete) is abstracted in a clean database.py module.
+
 ## 🚀 Installation & Running
 
 1. Clone the repository:
@@ -54,10 +59,12 @@ Built using Python and Tkinter, it offers an easy-to-use graphical interface.
 
 ## 🛠 Technologies Used
 
-- Python 3.11+
-- Tkinter
-- SQLite3 (built-in)
-- Pillow (for images)
+- Python – Core programming language
+Tkinter – GUI framework for desktop apps
+tkcalendar – Calendar widget for date selection
+SQLite3 – Lightweight embedded database
+ttk – Styled widgets for enhanced UI
+
 ## 📝 License
 This project is for educational purposes only.
 
